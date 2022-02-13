@@ -12,7 +12,7 @@
  * @returns {boolean} true if str is a string
  */
 function isString(str) {
-  // write your code here & return
+  return Object.prototype.toString.call(str) === '[object String]';
 }
 
 /**
@@ -20,9 +20,7 @@ function isString(str) {
  * @param {string} str - the string to check
  * @returns {boolean}  - true if str is blank (empty)
  */
-function isBlank(str) {
-  // write your code here & return
-}
+function isBlank(str) {}
 
 /**
  * Creates a new string by concatenating the given strings
@@ -33,7 +31,13 @@ function isBlank(str) {
  * @returns {string} - the name of the person
  */
 function sayHelloOrBye(name, num) {
-  // write your code here & return
+  let str;
+  if (num === 1) {
+    str = str.concat('Hello', name);
+  } else if (num === 0) {
+    str = str.concat('Goodbye', name);
+  }
+  return str;
 }
 
 /**
@@ -43,9 +47,7 @@ function sayHelloOrBye(name, num) {
  * @returns {boolean} - true if the strings are the same, false otherwise
  * ? [JavaScript: The Definitive Guide, Chapter 4.9.2](https://bit.ly/3Cvjcw2)
  */
-function compareStrings(str1, str2) {
-  // write your code here & return
-}
+function compareStrings(str1, str2) {}
 
 module.exports = {
   isString,

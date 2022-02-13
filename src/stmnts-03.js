@@ -16,7 +16,9 @@
  */
 
 function rectanglePerimeter(width, height) {
-  // write your code here & return
+  let perimeter = 2(width) + 2(height);
+  perimeter = perimeter.toFixed(2);
+  return perimeter;
 }
 
 /**
@@ -27,7 +29,9 @@ function rectanglePerimeter(width, height) {
  *
  */
 function rectangleArea(width, height) {
-  // write your code here & return
+  let area = width * height;
+  area = area.toFixed(2);
+  return area;
 }
 
 /**
@@ -41,7 +45,9 @@ function rectangleArea(width, height) {
  * Hint: use toFixed()
  */
 function circleCircumference(radius) {
-  // write your code here & return
+  let circ = 2 * 3.14 * radius;
+  circ = circ.toFixed(2);
+  return circ;
 }
 
 /**
@@ -51,7 +57,9 @@ function circleCircumference(radius) {
  * @returns {number} - the area of the circle rounded to 2 decimal places
  */
 function circleArea(radius) {
-  // write your code here & return
+  let area = 3.14 * (radius * radius);
+  area = area.toFixed(2);
+  return area;
 }
 
 /**
@@ -63,7 +71,8 @@ function circleArea(radius) {
  * @returns {number} - the area of the triangle rounded to 2 decimal places
  */
 function triangleArea(base, height) {
-  // write your code here & return
+  const area = (height * base) / 2;
+  return area;
 }
 
 /**
@@ -74,7 +83,8 @@ function triangleArea(base, height) {
  * @returns {number} - the hypotenuse of the triangle rounded to 2 decimal places
  */
 function pythagorean(sideA, sideB) {
-  // write your code here & return
+  const c = 2(sideA) + 2(sideB);
+  return c;
 }
 
 module.exports = {

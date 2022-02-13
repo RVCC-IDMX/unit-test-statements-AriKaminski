@@ -14,6 +14,8 @@
  */
 function nextInteger(int) {
   // write your code here & return value
+  const a = int + 1;
+  return a;
 }
 /**
  * Calculates the product of two numbers
@@ -23,6 +25,8 @@ function nextInteger(int) {
  */
 function times(a, b) {
   // write your code here & return value
+  const x = a * b;
+  return x;
 }
 
 /**
@@ -32,6 +36,8 @@ function times(a, b) {
  */
 function convertMinutesToSeconds(minutes) {
   // write your code here & return value
+  const seconds = minutes * 60;
+  return seconds;
 }
 
 /**
@@ -41,6 +47,9 @@ function convertMinutesToSeconds(minutes) {
  */
 function convertHoursToSeconds(hours) {
   // write your code here & return value
+  const minutes = hours * 60;
+  const seconds = minutes * 60;
+  return seconds;
 }
 
 module.exports = {

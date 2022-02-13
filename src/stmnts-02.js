@@ -15,6 +15,8 @@
  */
 function sum(a, b) {
   // write your code here & return value
+  const total = a + b;
+  return total;
 }
 
 /**
@@ -25,6 +27,8 @@ function sum(a, b) {
  */
 function betterSum(x, y) {
   // write your code here & return value
+  const total = +x + +y;
+  return total;
 }
 
 /**
@@ -38,6 +42,8 @@ function betterSum(x, y) {
  */
 function remainder(number, divisor) {
   // write your code here & return value
+  const x = number % divisor;
+  return x;
 }
 module.exports = {
   sum,
