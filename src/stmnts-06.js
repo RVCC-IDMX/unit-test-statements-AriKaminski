@@ -20,7 +20,15 @@ function isString(str) {
  * @param {string} str - the string to check
  * @returns {boolean}  - true if str is blank (empty)
  */
-function isBlank(str) {}
+function isBlank(str) {
+  let x;
+  if (str === '') {
+    x = true;
+  } else {
+    x = false;
+  }
+  return x;
+}
 
 /**
  * Creates a new string by concatenating the given strings

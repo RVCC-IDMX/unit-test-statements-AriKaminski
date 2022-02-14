@@ -32,9 +32,8 @@ function logicalOr(a, b) {
  * @returns {boolean} - the opposite of the given boolean
  */
 function invertBoolean(bool) {
-  // write your code here & return
-  // bool = !bool;
-  return bool;
+  const x = !bool;
+  return x;
 }
 
 /**
@@ -55,7 +54,9 @@ function numberOfOdds(num) {
   let i = 0;
   let count = 0;
   while (i < num) i += 1;
-  if (i % 2 === 1) count += 1;
+  if (i % 2 === 1) {
+    count += 1;
+  }
   return count;
 }
 
@@ -71,7 +72,7 @@ function numberOfOdds(num) {
 function addUpTheNumbers(num) {
   // write your code here & return
   let sum = 0;
-  for (let i = 0; i < num; i += 1) {
+  for (let i = 0; i <= num; i += 1) {
     sum += i;
   }
   return sum;
