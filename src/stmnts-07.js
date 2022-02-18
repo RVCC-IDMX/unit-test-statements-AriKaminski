@@ -93,16 +93,16 @@ function addUpTheNumbers(num) {
  */
 function gradeGenerator(score) {
   let grade;
-  if (score <= 100) {
-    grade = 'A';
-  } else if (score < 90) {
-    grade = 'B';
-  } else if (score < 80) {
-    grade = 'C';
+  if (score < 60) {
+    grade = 'F';
   } else if (score < 70) {
     grade = 'D';
-  } else if (score < 60) {
-    grade = 'F';
+  } else if (score < 80) {
+    grade = 'C';
+  } else if (score < 90) {
+    grade = 'B';
+  } else if (score <= 100) {
+    grade = 'A';
   }
 
   return grade;
@@ -126,16 +126,16 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   let str;
-  if (score <= 100) {
-    str = `${name} got an A`;
-  } else if (score < 90) {
-    str = `${name} got a B`;
-  } else if (score < 80) {
-    str = `${name} got a C`;
+  if (score < 60) {
+    str = `${name} got an F`;
   } else if (score < 70) {
     str = `${name} got a D`;
-  } else if (score < 60) {
-    str = `${name} got an F`;
+  } else if (score < 80) {
+    str = `${name} got a C`;
+  } else if (score < 90) {
+    str = `${name} got a B`;
+  } else if (score <= 100) {
+    str = `${name} got an A`;
   }
   return str;
 }
