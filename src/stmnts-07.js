@@ -124,7 +124,21 @@ function gradeGenerator(score) {
  * ? note: you have to use English grammar's correct indefinite article
  * ? it's 'an A' (not a A) and 'an F' (not a F)
  */
-function getGrade(name, score) {}
+function getGrade(name, score) {
+  let str;
+  if (score <= 100) {
+    str = `${name} got an A`;
+  } else if (score < 90) {
+    str = `${name} got a B`;
+  } else if (score < 80) {
+    str = `${name} got a C`;
+  } else if (score < 70) {
+    str = `${name} got a D`;
+  } else if (score < 60) {
+    str = `${name} got an F`;
+  }
+  return str;
+}
 
 module.exports = {
   logicalAnd,
