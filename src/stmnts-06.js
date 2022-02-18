@@ -40,10 +40,10 @@ function isBlank(str) {
  */
 function sayHelloOrBye(name, num) {
   let str;
-  if (num === 1) {
-    str = str.concat('Hello', name);
-  } else if (num === 0) {
-    str = str.concat('Goodbye', name);
+  if (num === 0) {
+    str = `Hello ${name}`;
+  } else {
+    str = `Bye ${name}`;
   }
   return str;
 }
@@ -55,7 +55,15 @@ function sayHelloOrBye(name, num) {
  * @returns {boolean} - true if the strings are the same, false otherwise
  * ? [JavaScript: The Definitive Guide, Chapter 4.9.2](https://bit.ly/3Cvjcw2)
  */
-function compareStrings(str1, str2) {}
+function compareStrings(str1, str2) {
+  let bool;
+  if (str1 === str2) {
+    bool = true;
+  } else {
+    bool = false;
+  }
+  return bool;
+}
 
 module.exports = {
   isString,

@@ -50,13 +50,12 @@ function invertBoolean(bool) {
  * ? [JavaScript: The Definitive Guide, Chapter 5.4.3](https://bit.ly/39hrIlW)
  */
 function numberOfOdds(num) {
-  // write your code here & return
-  let i = 0;
   let count = 0;
-  while (i < num) i += 1;
-  if (i % 2 === 1) {
-    count += 1;
-  }
+  for (let i = 0; i < num; i += 1)
+    if (i % 2 === 1) {
+      count += 1;
+    }
+
   return count;
 }
 
@@ -70,7 +69,6 @@ function numberOfOdds(num) {
  * ? For example, num is 4 then return 10 because 1 + 2 + 3 + 4 = 10.
  */
 function addUpTheNumbers(num) {
-  // write your code here & return
   let sum = 0;
   for (let i = 0; i <= num; i += 1) {
     sum += i;
@@ -94,7 +92,6 @@ function addUpTheNumbers(num) {
  * ?
  */
 function gradeGenerator(score) {
-  // write your code here & return
   let grade;
   if (score <= 100) {
     grade = 'A';
@@ -107,6 +104,7 @@ function gradeGenerator(score) {
   } else if (score < 60) {
     grade = 'F';
   }
+
   return grade;
 }
 
