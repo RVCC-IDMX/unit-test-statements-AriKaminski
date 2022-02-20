@@ -13,7 +13,7 @@
  * ? [JavaScript: The Definitive Guide, Chapter 4.10](https://bit.ly/39lbxnK)
  */
 function logicalAnd(a, b) {
-  // write your code here & return
+  return a && b;
 }
 
 /**
@@ -23,7 +23,8 @@ function logicalAnd(a, b) {
  * @returns {boolean} - true if a or b is truthy, false if both are falsy
  */
 function logicalOr(a, b) {
-  // write your code here & return
+  const x = a || b;
+  return x;
 }
 
 /**
